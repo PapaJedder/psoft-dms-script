@@ -1,0 +1,26 @@
+{
+    "name": "psft-dms-script",
+    "displayName": "psft-dms-script",
+    "description": "Support for PeopleSoft Datamover Script",
+    "version": "0.0.1",
+    "publisher": "PapaJedder",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "psft-dms",
+            "aliases": ["Datamover Script", "psft-dms"],
+            "extensions": [".dms",".DMS",".Dms"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "psft-dms",
+            "scopeName": "source.datamover",
+            "path": "./syntaxes/psft-dms.tmLanguage.json"
+        }]
+    }
+}
